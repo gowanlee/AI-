@@ -1,0 +1,20 @@
+.navbar {
+    &-brand {
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/logo.png?raw=true);
+        background-size: contain;
+        background-repeat: no-repeat;
+        text-indent: 101%;
+    }
+
+    &-toggler[aria-expanded="false"] {
+        .close {
+            display: none;
+        }
+    }
+
+    &-toggler[aria-expanded="true"] {
+        .menu {
+            display: none;
+        }
+    }
+}

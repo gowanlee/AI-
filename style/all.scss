@@ -1,0 +1,12 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "./utils/variables"; // 自訂BS5 variables
+@import "./utils/utilities"; // 自訂BS5 utilities
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "./base/base";
+
+@import "./components/navbar";
+@import "./components/hover";
+@import "./components/swiper";
+@import "./components/animation";
+@import "./components/gradient";
