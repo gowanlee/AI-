@@ -5,16 +5,4 @@
         background-repeat: no-repeat;
         text-indent: 101%;
     }
-
-    &-toggler[aria-expanded="false"] {
-        .close {
-            display: none;
-        }
-    }
-
-    &-toggler[aria-expanded="true"] {
-        .menu {
-            display: none;
-        }
-    }
 }

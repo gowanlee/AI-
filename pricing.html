@@ -29,8 +29,8 @@
                     <!-- logo -->
                     <h1><a class="navbar-brand overflow-hidden white-space-nowrap d-block h-24 h-lg-40" href="./index.html">AI工具王</a></h1>
                     <!-- hamburger menu btn -->
-                    <button class="navbar-toggler d-flex d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="material-icons text-white menu">menu</span>
+                    <button class="navbar-toggler d-flex d-lg-none collapse-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="material-icons text-white open">menu</span>
                         <span class="material-icons text-white close">close</span>
                     </button>
                 </div>
@@ -62,7 +62,7 @@
                 <h2 class="fw-bolder fs-3 lh-sm fs-lg-1 mb-12 mb-lg-sm">用多少，<br>付多少。</h2>
                 <div class="row justify-content-end">
                     <div class="col-6">
-                        <p class="fw-bolder fs-28 fs-lg-3 text-end">我們相信，最靈活的取用機制，才能最大化的幫助你業務的推動。</p>
+                        <p class="fw-bolder fs-28 fs-lg-3">我們相信，最靈活的取用機制，才能最大化的幫助你業務的推動。</p>
                     </div>
                 </div>
             </div>
@@ -357,9 +357,9 @@
                     <h3 class="fw-bolder fs-5 fs-lg-4">常見問題</h3>
                 </div>
                 <ul class="col-lg-8">
-                    <li class="border rounded border-dark py-5 px-10 qa-card mb-5">
-                        <button class="text-white p-0 fw-bolder fs-5 w-100 text-start navbar-toggler d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQA-1" aria-expanded="false" aria-controls="collapseQA-1">
-                            <span class="material-icons fs-sm menu me-5 fw-bolder">add</span>
+                    <li class="border rounded border-dark py-5 px-10 qa-card mb-4 collapse-btn" data-bs-toggle="collapse" data-bs-target="#collapseQA-1" aria-controls="collapseQA-1" aria-expanded="false" type="button">
+                        <button class="text-white p-0 fw-bolder fs-5 w-100 text-start navbar-toggler d-flex align-items-center">
+                            <span class="material-icons fs-sm open me-5 fw-bolder">add</span>
                             <span class="material-icons fs-sm close me-5 fw-bolder">remove</span>
                             如何選擇適合的AI模型？
                         </button>
@@ -367,9 +367,9 @@
                             <p class="lh-base">選擇適合的 AI 模型需要考慮您的應用場景、需要解決的問題、可用的資源以及預算等因素。可以通過對比不同模型的性能、準確率、速度等指標，以及與其他用戶的評價與反饋，來選擇最適合的模型。</p>
                         </div>
                     </li>
-                    <li class="border rounded border-dark py-5 px-10 qa-card mb-4">
-                        <button class="text-white p-0 fw-bolder fs-5 w-100 text-start navbar-toggler d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQA-2" aria-expanded="false" aria-controls="collapseQA-2">
-                            <span class="material-icons fs-sm menu me-5 fw-bolder">add</span>
+                    <li class="border rounded border-dark py-5 px-10 qa-card mb-4 collapse-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQA-2" aria-expanded="false" aria-controls="collapseQA-2">
+                        <button class="text-white p-0 fw-bolder fs-5 w-100 text-start navbar-toggler d-flex align-items-center">
+                            <span class="material-icons fs-sm open me-5 fw-bolder">add</span>
                             <span class="material-icons fs-sm close me-5 fw-bolder">remove</span>
                             租用模型的費用是如何計算的？
                         </button>
@@ -377,9 +377,9 @@
                             <p class="lh-base">租用模型的費用通常會根據模型的性能和使用時間等因素進行計算。具體而言，模型的性能可以根據其精度、速度、佔用資源等指標來評估；而使用時間可以根據租用時間的長短來計算，通常會按小時、天或月來計算。綜合考慮這些因素，系統會自動算出對應的租用費用。</p>
                         </div>
                     </li>
-                    <li class="border rounded border-dark py-5 px-10 qa-card mb-4">
-                        <button class="text-white p-0 fw-bolder fs-5 w-100 text-start navbar-toggler d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQA-3" aria-expanded="false" aria-controls="collapseQA-3">
-                            <span class="material-icons fs-sm menu me-5 fw-bolder">add</span>
+                    <li class="border rounded border-dark py-5 px-10 qa-card mb-4 collapse-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQA-3" aria-expanded="false" aria-controls="collapseQA-3">
+                        <button class="text-white p-0 fw-bolder fs-5 w-100 text-start navbar-toggler d-flex align-items-center">
+                            <span class="material-icons fs-sm open me-5 fw-bolder">add</span>
                             <span class="material-icons fs-sm close me-5 fw-bolder">remove</span>
                             如何進行付款？
                         </button>
@@ -387,9 +387,9 @@
                             <p class="lh-base">付款方式可以通過網站上提供的線上支付平台進行支付。具體而言，您可以選擇信用卡、銀行轉帳電子錢包等不同的支付方式進行支付。在支付前，您需要先登錄網站並選擇適合的租用方案，系統會自動計算出對應的租用費用和支付金額，然後您可以選擇適合的支付方式進行支付。完成支付後，系統會自動向您提供相應的服務。</p>
                         </div>
                     </li>
-                    <li class="border rounded border-dark py-5 px-10 qa-card mb-4">
-                        <button class="text-white p-0 fw-bolder fs-5 w-100 text-start navbar-toggler d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQA-4" aria-expanded="false" aria-controls="collapseQA-4">
-                            <span class="material-icons fs-sm menu me-5 fw-bolder">add</span>
+                    <li class="border rounded border-dark py-5 px-10 qa-card mb-4 collapse-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQA-4" aria-expanded="false" aria-controls="collapseQA-4">
+                        <button class="text-white p-0 fw-bolder fs-5 w-100 text-start navbar-toggler d-flex align-items-center">
+                            <span class="material-icons fs-sm open me-5 fw-bolder">add</span>
                             <span class="material-icons fs-sm close me-5 fw-bolder">remove</span>
                             租用模型的期限是多久？
                         </button>
@@ -397,9 +397,9 @@
                             <p class="lh-base">租用模型的期限可以根據您的需求進行設置，通常可以選擇幾個小時、幾天或幾個月等不同的時間段。</p>
                         </div>
                     </li>
-                    <li class="border rounded border-dark py-5 px-10 qa-card mb-4">
-                        <button class="text-white p-0 fw-bolder fs-5 w-100 text-start navbar-toggler d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQA-5" aria-expanded="false" aria-controls="collapseQA-5">
-                            <span class="material-icons fs-sm menu me-5 fw-bolder">add</span>
+                    <li class="border rounded border-dark py-5 px-10 qa-card mb-4 collapse-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQA-5" aria-expanded="false" aria-controls="collapseQA-5">
+                        <button class="text-white p-0 fw-bolder fs-5 w-100 text-start navbar-toggler d-flex align-items-center">
+                            <span class="material-icons fs-sm open me-5 fw-bolder">add</span>
                             <span class="material-icons fs-sm close me-5 fw-bolder">remove</span>
                             如果在使用過程中遇到問題，應該怎麼處理？
                         </button>
@@ -441,6 +441,9 @@
     
     <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- axios -->
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
      
     <script src="./js/all.js"></script>
 </body>

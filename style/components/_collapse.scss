@@ -1,0 +1,11 @@
+.collapse-btn[aria-expanded="false"] {
+    .close {
+        display: none;
+    }
+}
+
+.collapse-btn[aria-expanded="true"] {
+    .open {
+        display: none;
+    }
+}

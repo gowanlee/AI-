@@ -17892,17 +17892,22 @@ a:hover {
   transition: all 0.8s;
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.overflow-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.overflow-scroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 .navbar-brand {
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/logo.png?raw=true);
   background-size: contain;
   background-repeat: no-repeat;
   text-indent: 101%;
-}
-.navbar-toggler[aria-expanded=false] .close {
-  display: none;
-}
-.navbar-toggler[aria-expanded=true] .menu {
-  display: none;
 }
 
 .btn:hover {
@@ -17918,6 +17923,9 @@ footer button:hover {
   transition: all 0.6s;
 }
 
+.card {
+  overflow: hidden;
+}
 .card:hover img {
   transform: scale(1.2);
   transition: all 0.6s;
@@ -17993,7 +18001,6 @@ footer button:hover {
 
 .gradient::before {
   position: absolute;
-  display: fixed;
   content: "";
   height: 100%;
   width: 30%;
@@ -18008,4 +18015,12 @@ footer button:hover {
   top: 0;
   right: 0;
   background: linear-gradient(to left, #000000 0%, rgba(0, 0, 0, 0.991615) 11.79%, rgba(0, 0, 0, 0.967585) 21.38%, rgba(0, 0, 0, 0.9296) 29.12%, rgba(0, 0, 0, 0.879348) 35.34%, rgba(0, 0, 0, 0.818519) 40.37%, rgba(0, 0, 0, 0.7488) 44.56%, rgba(0, 0, 0, 0.671881) 48.24%, rgba(0, 0, 0, 0.589452) 51.76%, rgba(0, 0, 0, 0.5032) 55.44%, rgba(0, 0, 0, 0.414815) 59.63%, rgba(0, 0, 0, 0.325985) 64.66%, rgba(0, 0, 0, 0.2384) 70.88%, rgba(0, 0, 0, 0.153748) 78.62%, rgba(0, 0, 0, 0.0737185) 88.21%, rgba(0, 0, 0, 0) 100%);
+}
+
+.collapse-btn[aria-expanded=false] .close {
+  display: none;
+}
+
+.collapse-btn[aria-expanded=true] .open {
+  display: none;
 }
