@@ -249,6 +249,7 @@ function searchKeyword() {
             data.page = 1;
             getData(data);
             e.target.value = "";
+            data.search = "";
         }
     })
 }
