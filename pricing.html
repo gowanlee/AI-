@@ -172,11 +172,11 @@
                 <h3 class="fw-bolder fs-4 mb-8 fs-lg-2 mb-lg-sm text-black text-center">這些超酷的應用，<span class="d-block d-xxl-inline">都來自AI工具王</span></h3>
                 <div class="bg-gray-200 py-5 px-10 rounded d-flex align-items-center mb-4 mb-lg-6">
                     <span class="material-icons text-gray me-3">search</span>
-                    <input class="bg-gray-200 border-0 w-100" type="text" placeholder="輸入關鍵字搜尋">
+                    <input class="bg-gray-200 border-0 w-100" type="search" placeholder="輸入關鍵字搜尋">
                 </div>
 
                 <!-- 表單篩選 -->
-                <form class="mb-11 mb-lg-10 position-lg-relative">
+                <div class="mb-11 mb-lg-10 position-lg-relative">
                     <div class="d-flex justify-content-between align-items-center mb-4">
                         <div class="dropdown">
                             <button class="border border-gray-200 rounded py-5 px-10 dropdown d-flex align-items-center" type="button" id="dropdownFilter" data-bs-toggle="dropdown" aria-expanded="false">
@@ -184,7 +184,7 @@
                                 <span class="material-icons ms-3 fs-5">filter_alt</span>
                             </button>
                             <div class="dropdown-menu border-0 py-5 end-108" style="box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);" aria-labelledby="dropdownFilter"> 
-                                <ul class="d-flex flex-column gap-2">
+                                <!-- <ul class="d-flex flex-column gap-2">
                                     <li><a class="dropdown-header py-2 px-10 d-block fw-bold fs-12 text-gray" href="#">AI 模型</a></li>
                                     <li><a class="dropdown-item px-10 d-block lh-base" href="#">所有模型</a></li>
                                     <li><a class="dropdown-item px-10 d-block lh-base" href="#">卡卡</a></li>
@@ -192,23 +192,23 @@
                                     <li><a class="dropdown-item px-10 d-block lh-base" href="#">琪琪</a></li>
                                     <li><a class="dropdown-item px-10 d-block lh-base" href="#">昊昊</a></li>
                                     <li><hr class="dropdown-divider mx-10 bg-gray border-0"></li>
-                                </ul>
-                                <ul class="d-flex flex-column gap-2">
-                                    <li><a class="dropdown-header py-2 px-10 d-block fw-bold fs-12 text-gray pt-4" href="#">類型</a></li>
+                                </ul> -->
+                                <ul class="d-flex flex-column gap-2 filter">
+                                    <!-- <li><a class="dropdown-header py-2 px-10 d-block fw-bold fs-12 text-gray pt-4" href="#">類型</a></li>
                                     <li><a class="dropdown-item px-10 d-block lh-base" href="#">所有類型</a></li>
                                     <li><a class="dropdown-item px-10 d-block lh-base" href="#">篩選項目 1</a></li>
                                     <li><a class="dropdown-item px-10 d-block lh-base" href="#">篩選項目 2</a></li>
                                     <li><a class="dropdown-item px-10 d-block lh-base" href="#">篩選項目 3</a></li>
-                                    <li><a class="dropdown-item px-10 d-block lh-base" href="#">篩選項目 4</a></li>
+                                    <li><a class="dropdown-item px-10 d-block lh-base" href="#">篩選項目 4</a></li> -->
                                 </ul>
                             </div>
                         </div>
                         <div class="dropdown">
                             <button class="border border-gray-200 rounded py-5 px-10 dropdown d-flex align-items-center" type="button" id="dropdownTimeFilter" data-bs-toggle="dropdown" aria-expanded="false">
-                              <span>由新到舊</span>
+                              <span class="btnSortText">由新到舊</span>
                               <span class="material-icons ms-3 fs-5">keyboard_arrow_down</span>
                             </button>
-                            <ul class="dropdown-menu border-0 py-5 text-center end-0 start-20" style="box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);" aria-labelledby="dropdownTimeFilter">
+                            <ul class="dropdown-menu border-0 py-5 text-center end-0 start-20 btnSort" style="box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);" aria-labelledby="dropdownTimeFilter">
                               <li><a class="dropdown-item px-10 d-block lh-base" href="#">由新到舊</a></li>
                               <li><a class="dropdown-item px-10 d-block lh-base" href="#">由舊到新</a></li>
                             </ul>
@@ -217,21 +217,21 @@
 
                     <!-- 分類 -->
                     <ul class="d-flex align-items-center overflow-scroll category position-lg-absolute top-50 start-50 translate-middle-lg">
-                        <li><a href="#" class="lh-base link-gray text-nowrap d-block py-2 px-4 category-link active">全部</a></li>
+                        <!-- <li><a href="#" class="lh-base link-gray text-nowrap d-block py-2 px-4 category-link active">全部</a></li>
                         <li><a href="#" class="lh-base link-gray text-nowrap d-block py-2 px-4 category-link">聊天</a></li>
                         <li><a href="#" class="lh-base link-gray text-nowrap d-block py-2 px-4 category-link">影像辨識</a></li>
                         <li><a href="#" class="lh-base link-gray text-nowrap d-block py-2 px-4 category-link">翻譯</a></li>
                         <li><a href="#" class="lh-base link-gray text-nowrap d-block py-2 px-4 category-link">行銷</a></li>
                         <li><a href="#" class="lh-base link-gray text-nowrap d-block py-2 px-4 category-link">客服</a></li>
-                        <li><a href="#" class="lh-base link-gray text-nowrap d-block py-2 px-4 category-link">生產力</a></li>
+                        <li><a href="#" class="lh-base link-gray text-nowrap d-block py-2 px-4 category-link">生產力</a></li> -->
                     </ul>
-                </form>
+                </div>
                 
                 <!-- products-card -->
-                <ul class="row g-5 mb-8 mb-lg-10">
-                    <li class="col-md-6 col-lg-4">
+                <ul class="row g-5 mb-8 mb-lg-10 productsCard">
+                    <!-- <li class="col-md-6 col-lg-4">
                         <div class="card h-100">
-                            <div class="overflow-hidden rounded-top"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool1.png?raw=true" class="card-img-top" alt="Chatbot Builder"></div>
+                            <div class="overflow-hidden"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool1.png?raw=true" class="card-img-top" alt="Chatbot Builder"></div>
                             <div class="card-body px-8 py-5 border-bottom border-gray-200">
                                 <h4 class="card-title text-black fw-bolder mb-3">Chatbot Builder</h4>
                                 <p class="card-text text-gray-dark fs-sm lh-base">建立智能化的聊天機器人，解答常見問題、提供客戶支援、收集反饋等。</p>
@@ -248,7 +248,7 @@
                     </li>
                     <li class="col-md-6 col-lg-4">
                         <div class="card h-100">
-                            <div class="overflow-hidden rounded-top"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool2.png?raw=true" class="card-img-top" alt="Image Recognition Platform"></div>
+                            <div class="overflow-hidden"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool2.png?raw=true" class="card-img-top" alt="Image Recognition Platform"></div>
                             <div class="card-body px-8 py-5 border-bottom border-gray-200">
                                 <h4 class="card-title text-black fw-bolder mb-3">Image Recognition Platform</h4>
                                 <p class="card-text text-gray-dark fs-sm lh-base">專業的圖像識別平台，識別圖像、分類、標記等。</p>
@@ -265,7 +265,7 @@
                     </li>
                     <li class="col-md-6 col-lg-4">
                         <div class="card h-100">
-                            <div class="overflow-hidden rounded-top"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool3.png?raw=true" class="card-img-top" alt="Language Translation API"></div>
+                            <div class="overflow-hidden"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool3.png?raw=true" class="card-img-top" alt="Language Translation API"></div>
                             <div class="card-body px-8 py-5 border-bottom border-gray-200">
                                 <h4 class="card-title text-black fw-bolder mb-3">Language Translation API</h4>
                                 <p class="card-text text-gray-dark fs-sm lh-base">專業的語言翻譯 API，實現文本翻譯功能，支援多種格式的文本。</p>
@@ -282,7 +282,7 @@
                     </li>
                     <li class="col-md-6 col-lg-4">
                         <div class="card h-100">
-                            <div class="overflow-hidden rounded-top"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool4.png?raw=true" class="card-img-top" alt="Sentiment Analysis API"></div>
+                            <div class="overflow-hidden"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool4.png?raw=true" class="card-img-top" alt="Sentiment Analysis API"></div>
                             <div class="card-body px-8 py-5 border-bottom border-gray-200">
                                 <h4 class="card-title text-black fw-bolder mb-3">Sentiment Analysis API</h4>
                                 <p class="card-text text-gray-dark fs-sm lh-base">自動識別文本中的情感傾向，包括正向、負向和中性等。適用於情感分析、社交媒體監控、市場調查等。</p>
@@ -299,7 +299,7 @@
                     </li>
                     <li class="col-md-6 col-lg-4">
                         <div class="card h-100">
-                            <div class="overflow-hidden rounded-top"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool5.png?raw=true" class="card-img-top" alt="Fraud Detection Platform"></div>
+                            <div class="overflow-hidden"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool5.png?raw=true" class="card-img-top" alt="Fraud Detection Platform"></div>
                             <div class="card-body px-8 py-5 border-bottom border-gray-200">
                                 <h4 class="card-title text-black fw-bolder mb-3">Fraud Detection Platform</h4>
                                 <p class="card-text text-gray-dark fs-sm lh-base">預防詐騙活動，適用於銀行、金融、電商等。</p>
@@ -316,7 +316,7 @@
                     </li>
                     <li class="col-md-6 col-lg-4">
                         <div class="card h-100">
-                            <div class="overflow-hidden rounded-top"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool6.png?raw=true" class="card-img-top" alt="Voice Assistant SDK"></div>
+                            <div class="overflow-hidden"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool6.png?raw=true" class="card-img-top" alt="Voice Assistant SDK"></div>
                             <div class="card-body px-8 py-5 border-bottom border-gray-200">
                                 <h4 class="card-title text-black fw-bolder mb-3">Voice Assistant SDK</h4>
                                 <p class="card-text text-gray-dark fs-sm lh-base">通過語音控制應用程式、設備，實現多種功能，例如播放音樂、查詢天氣、發送信息等。</p>
@@ -330,21 +330,20 @@
                                 <a class="stretched-link" href="#"><span class="material-icons text-black">share</span></a>
                             </div>
                         </div>
-                    </li>
+                    </li> -->
                 </ul>
                 
                 <!-- pagination -->
                 <nav aria-label="Page navigation">
-                    <ul class="pagination justify-content-end border-0 gap-1 p-0 flex-wrap">
-                    <li class="page-item disabled">
-                        <a class="page-link fs-sm fw-bold lh-base" href="#" tabindex="-1" aria-disabled="true"><span class="material-icons fs-sm fw-bold align-middle">keyboard_arrow_left</span></a>
-                    </li>
-                    <li class="page-item"><a class="page-link fs-sm fw-bold lh-base active page-link-toggle" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link fs-sm fw-bold lh-base page-link-toggle" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link fs-sm fw-bold lh-base page-link-toggle" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link fs-sm fw-bold lh-base page-link-toggle" href="#">4</a></li>
-                    <li class="page-item"><a class="page-link fs-sm fw-bold lh-base page-link-toggle" href="#">5</a></li>
-                    <li class="page-item"><a class="page-link" href="#"><span class="material-icons fs-sm fw-bold align-middle">keyboard_arrow_right</span></a></li>
+                    <ul class="pagination justify-content-end align-items-center border-0 p-0 gap-1 overflow-scroll">
+                        <!-- <li class="page-item disabled"><a class="page-link fs-sm fw-bold lh-base" href="#" tabindex="-1" aria-disabled="true"><span class="material-icons fs-sm fw-bold align-middle">keyboard_arrow_left</span></a>
+                        </li>
+                        <li class="page-item"><a class="page-link fs-sm fw-bold lh-base active page-link-toggle" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link fs-sm fw-bold lh-base page-link-toggle" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link fs-sm fw-bold lh-base page-link-toggle" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link fs-sm fw-bold lh-base page-link-toggle" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link fs-sm fw-bold lh-base page-link-toggle" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link page-link-next" href="#"><span class="material-icons fs-sm fw-bold align-middle">keyboard_arrow_right</span></a></li> -->
                     </ul>
                 </nav>  
             </div>
