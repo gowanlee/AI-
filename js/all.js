@@ -86,6 +86,7 @@ function renderWorksData() {
             </div>
         </li>`
     })
+
     productsCard.innerHTML = products;
 }
 
@@ -232,7 +233,7 @@ function changeCategory() {
             data.type = "";
         }
         else {
-            data.type = e.target.textContent
+            data.type = e.target.textContent;
         }
         getData(data);
     })
@@ -244,10 +245,10 @@ function searchKeyword() {
     search.addEventListener("keydown" , e => {
         // keyCode 13 is enter
         if (e.keyCode === 13) {
-            console.log(e.target.value);
             data.search = e.target.value;
             data.page = 1;
             getData(data);
+            e.target.value = "";
         }
     })
 }
